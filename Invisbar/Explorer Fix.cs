@@ -17,15 +17,17 @@ namespace Invisbar
             }
             catch (Exception ex)
             {
+                Console.WriteLine("An error has occured..");
+#if DEBUG
                 Console.WriteLine(ex);
+#endif      
             }
 
         }
 
         public static void regkey(string keypath, string keyname, string keyvalue)
         {
-            Microsoft.Win32.RegistryKey key;
-            key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(keypath);
+            RegistryKey key = Registry.CurrentUser.CreateSubKey(keypath);
             key.SetValue(keyname, keyvalue, RegistryValueKind.DWord);
             key.Close();
         }
