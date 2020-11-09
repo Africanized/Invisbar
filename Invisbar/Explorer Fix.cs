@@ -10,6 +10,7 @@ namespace Invisbar
         {
             try
             {
+                Console.WriteLine("Restarting Explorer...\n");
                 foreach (Process proc in Process.GetProcessesByName("explorer"))
                 {
                     proc.Kill();
@@ -22,7 +23,7 @@ namespace Invisbar
                 Console.WriteLine(ex);
 #endif      
             }
-
+            
         }
 
         public static void regkey(string keypath, string keyname, string keyvalue)
