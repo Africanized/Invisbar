@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invisbar", "Invisbar\Invisbar.csproj", "{B6E6319E-7E2C-46CA-B604-D28AF824DEED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6E6319E-7E2C-46CA-B604-D28AF824DEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6E6319E-7E2C-46CA-B604-D28AF824DEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6E6319E-7E2C-46CA-B604-D28AF824DEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6E6319E-7E2C-46CA-B604-D28AF824DEED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D65CD8F-50A8-4050-90FD-85D8B8B804F1}
+	EndGlobalSection
+EndGlobal
