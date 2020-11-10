@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+using System.Threading;
 
 namespace Invisbar
 {
@@ -9,14 +11,24 @@ namespace Invisbar
             while(true)
             {
                 Console.Title = "Invisbar";
-                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.Red;
 
-                Console.WriteLine("Select A Option For Your Taskbar:\n");
+                Console.WriteLine("Visibility Options:");
+                Console.WriteLine("------------------------------");
                 Console.WriteLine("1. Completely Invisible");
                 Console.WriteLine("2. Slightly Visible");
                 Console.WriteLine("3. Default Taskbar Visibility");
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("\nMinor Tweaks:");
+                Console.WriteLine("------------------------------");
                 Console.WriteLine("4. Show Seconds On Clock");
-                Console.WriteLine("5. Reset All To Defaults\n");
+                Console.WriteLine("5. Reset All To Defaults");
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("\nOther Options:");
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("6. Exit This Application");
+                Console.WriteLine("------------------------------");
+                Console.Write("Choose A Option For Your Taskbar: ");
                 int userInput = int.Parse(Console.ReadLine());
 
                 Console.Clear();
@@ -64,8 +76,16 @@ namespace Invisbar
                     //disable seconds on clock
                     Explorer_Fix.regkey(@"Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced", "ShowSecondsInSystemClock", "0");
                 }
+                else if (userInput == 6)
+                {
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    Console.WriteLine("Unexpected Response, Continuing....");
+                    Thread.Sleep(2000);
+                }
                 Explorer_Fix.restart();
-                Console.WriteLine("Finished!\n");
                 Console.Clear();
             }
             
