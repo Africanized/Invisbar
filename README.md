@@ -1,9 +1,14 @@
-## Invisbar
-* A simple program to help customize your taskbar to make Windows feel a bit better.
+## NOTE: This does NOT work on Windows 11!
+
+## Invisbar's Features:
+ * Doesn't need to run anything in the background.
  * Updated frequently.
  * Simple to use.
  * Can always go back to normal anytime.
  
+## What is Invisbar?
+* A simple program to help you make your Windows taskbar transparent, to make your desktop feel more smooth.
+
 ## How do I install Invisbar?
 * Download the zip file from the [release page!](https://github.com/Africanized/Invisbar/releases)
 * Extract the zip file to your desktop!
